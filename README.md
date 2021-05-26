@@ -9,6 +9,15 @@ For anyone interested, I'm learning my way around Unity using [their
 learning platform](https://learn.unity.com/).
 
 ### Playing
+#### Supported Platforms
+Currently the game is available for the following platforms:
+- Linux (64-bit)
+- MacOS (Intel 64-bit and Apple Silicon)
+- Windows (64-bit)
+- WebGL (Defaults to [http://localhost:57492/](http://localhost:57492/))
+
+Note that you may have to do more for playing on MacOS and Linux (converting to program), however
+everything is done and ready for windows via the TGoT Installer.
 #### Installation
 Download the installer from the [releases page](https://github.com/TechnoShip123/TGoT/releases/latest/)
 and run it. Windows might warn you with something along the lines of 
