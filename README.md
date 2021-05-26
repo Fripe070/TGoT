@@ -51,6 +51,9 @@ To uninstall the game, head to `Control Panel > Programs > Programs and Features
 uninstall should take you there as well. Find the game in the list
 of applications, and select it, then press **uninstall**.
 
+#### How to play
+The repository has a [Wikipedia](https://github.com/TechnoShip123/TGoT/Wiki/) where information is listed about the game, how to play it, and more. It will of course get updated as more features arrive to the game.
+
 ### Contributing
 This project isn't a formal game (yet) but rather a way for me to learn,
 so contributions aren't expected. If you do have some sort of suggestion
