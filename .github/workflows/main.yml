@@ -1,10 +1,10 @@
-name: Windows build
+name: Unity Build test
 
 on: [push, pull_request]
 
 jobs:
   build:
-    name: Build the Unity project
+    name: Build Project
     runs-on: ubuntu-latest
     steps:
       # Checkout
@@ -13,11 +13,11 @@ jobs:
         with:
           lfs: true
 
-#      # Cache
-#      - uses: actions/cache@v2
-#        with:
-#          path: Library
-#          key: Library
+      # Cache
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library
 
       # Test
       - name: Run tests
@@ -33,7 +33,7 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          targetPlatform: StandaloneWindows64
+          targetPlatform: StandaloneWindows
 
       # Output
       - uses: actions/upload-artifact@v2
