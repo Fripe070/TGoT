@@ -8,6 +8,19 @@ This is a simple game created by me in order to learn and understand:
 For anyone interested, I'm learning my way around Unity using [their
 learning platform](https://learn.unity.com/).
 
+### Playing
+#### Installation
+Download the installer from the [releases page](https://github.com/TechnoShip123/TGoT/releases/latest/)
+and run it. Windows might warn you with something along the lines of 
+_"This app could harm your device blah blah blah"_. Press _"Run anyway"_ and walk through the installer. 
+Once finished, you should see the game in the Start Menu (_All Apps_ section). Just click
+to run the game!
+#### Uninstallation
+To uninstall the game, head to `Control Panel > Programs > Programs and Features` 
+(Uninstall or change a program). Right clicking the game and pressing
+uninstall should take you there as well. Find the game in the list
+of applications, and select it, then press **uninstall**.
+
 ### Contributing
 This project isn't a formal game (yet) but rather a way for me to learn,
 so contributions aren't expected. If you do have some sort of suggestion
