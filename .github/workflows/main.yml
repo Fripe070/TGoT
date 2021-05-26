@@ -1,6 +1,6 @@
 name: Test Runner
 
-on: [push, pull_request, workflow_dispatch]
+on: [push, pull_request]
 
 jobs:
   testAllModes:
@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         projectPath:
-          - TGoT
+          - /TGoT
         testMode:
           - playmode
           - editmode
