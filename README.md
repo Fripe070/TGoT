@@ -9,22 +9,38 @@ For anyone interested, I'm learning my way around Unity using [their
 learning platform](https://learn.unity.com/).
 
 ### Playing
+
+#### Where to download
+This repository has a GitHub Action that builds the project after each commit. However, I do create
+releases when appropriate. In other words, the latest **stable** build can be found at the 
+[releases page](https://github.com/TechnoShip123/TGoT/releases/latest), but for the latest 
+(and possibly **unstable** build) you need to go to the latest 
+[Unity Build workflow](https://github.com/TechnoShip123/TGoT/actions/) and scroll down to 
+the artifacts. There you can download a `.zip` of the latest build by selecting your platform 
+(for example `Build-StandaloneWindows64` for the latest 64-bit Windows build).
+
 #### Supported Platforms
 Currently the game is available for the following platforms:
 - Linux (64-bit)
 - MacOS (Intel 64-bit and Apple Silicon)
-- Windows (64-bit)
+- Windows (Universal Windows Platform, 32-bit, 64-bit)
 - WebGL (Defaults to [http://localhost:57492/](http://localhost:57492/))
+- Android (4.4 KitKat)
+- iOS (iPhone and iPad)
 
 Note that you may have to do more for playing on MacOS and Linux (converting to program), however
 everything is done and ready for windows via the TGoT Installer.
-#### Installation
-Download the installer from the [releases page](https://github.com/TechnoShip123/TGoT/releases/latest/)
-and run it. Windows might warn you with something along the lines of 
-_"This app could harm your device blah blah blah"_. Press _"Run anyway"_ and walk through the installer. 
-Once finished, you should see the game in the Start Menu (_All Apps_ section). Just click
-to run the game!
-#### Uninstallation
+
+#### Installation & Uninstallation (Windows Installer)
+To install the game, download and run the installer from either the 
+[releases page](https://github.com/TechnoShip123/TGoT/releases/latest/) (**stable build**) 
+or the latest GitHub Action for the 
+[_Build Unity Project_](https://github.com/TechnoShip123/TGoT/actions/) workflow (**latest build**).
+Windows might warn you with something along the lines of _"This app could harm your device blah
+blah blah"_. Press _"Run anyway"_ and walk through the installer. Once finished, you should see the
+game in the Start Menu (_All Apps_ section)! If you clicked the checkbox at the end, the installer
+will automatically run the game, otherwise you can go to your apps menu and click to run the game.
+
 To uninstall the game, head to `Control Panel > Programs > Programs and Features` 
 (Uninstall or change a program). Right clicking the game and pressing
 uninstall should take you there as well. Find the game in the list
