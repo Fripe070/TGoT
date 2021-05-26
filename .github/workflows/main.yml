@@ -1,4 +1,4 @@
-name: 🛠 Build Unity Project
+name: 🛠 Unity Build
 
 on: [push, pull_request]
 
