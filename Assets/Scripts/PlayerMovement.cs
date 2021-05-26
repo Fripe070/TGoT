@@ -36,5 +36,14 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(cameraSwitchKey))  // If the user is pressing the camera switcher key
         { mainCamera.enabled = !mainCamera.enabled; hoodCamera.enabled = !hoodCamera.enabled; }
 
+        if (transform.position.x < -8f)
+        {
+            transform.position = new Vector3(-7.9f, transform.position.y, transform.position.z);
+        }
+        else if (transform.position.x > 28f)
+        {
+            transform.position = new Vector3(27.9f, transform.position.y, transform.position.z);
+        }
+
     }
 }
