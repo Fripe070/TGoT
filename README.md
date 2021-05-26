@@ -1,5 +1,5 @@
 ﻿![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/TechnoShip123/TGoT/%F0%9F%9B%A0%20Build%20Unity%20Project/master?label=Unity%20Build&logo=github%20actions&logoColor=skyblue&style=for-the-badge)
-![GitHub all releases](https://img.shields.io/github/downloads/TechnoShip123/TGoT/total?color=skyblue&label=Downloads&logo=github&style=for-the-badge)
+![GitHub all releases](https://img.shields.io/github/downloads/TechnoShip123/TGoT/total?label=Downloads&logo=github&style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/TechnoShip123/TGoT?style=for-the-badge)
 
 ![Supported Platforms](https://img.shields.io/badge/Platforms-Windows%20%7C%20OSX%20%7C%20Linux%20%7C%20WebGL%20%7C%20Android%20%7C%20iOS-brightgreen?style=for-the-badge&logo=unity)
