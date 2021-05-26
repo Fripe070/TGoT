@@ -38,11 +38,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.x < -8f)
         {
-            transform.position = new Vector3(-7.9f, transform.position.y, transform.position.z);
+
+            var transform1 = transform;
+            var position = transform1.position;
+            position = new Vector3(-7.9f, position.y, position.z);
+            transform1.position = position;
         }
         else if (transform.position.x > 28f)
         {
-            transform.position = new Vector3(27.9f, transform.position.y, transform.position.z);
+            var transform1 = transform;
+            var position = transform1.position;
+            position = new Vector3(27.9f, position.y, position.z);
+            transform1.position = position;
         }
 
     }
