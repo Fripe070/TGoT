@@ -11,9 +11,6 @@ public class PlayerMovement : MonoBehaviour
     public Camera hoodCamera;
     public KeyCode cameraSwitchKey = KeyCode.G;
 
-    // Local Multiplayer
-    // public string inputID;
-    
     // Start is called before the first frame update
     void Start()
     {
