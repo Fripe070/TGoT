@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         // else if (transform.position.x > 28f) {transform.position = new Vector3(27.9f, current_pos.y, current_pos.z); }
         
         //  A safety net at the bottom in case you fall
-        if (transform.position.y < -40) {transform.position = new Vector3(10f, 8f, 100f); }
+        if (transform.position.y < -40) {transform.position = new Vector3(0f, 8f, 75f); }
 
         // ReSharper disable once CompareOfFloatsByEqualityOperator
         // Check the car's rotation, if it is upside down (y=-1) then flip the car back up (y=1):
