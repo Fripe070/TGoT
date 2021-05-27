@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Private variables for the driving/turning speeds.
     private float speed = 20.0f;
-    private float turnSpeed = 45.0f;
+    private float turnSpeed = 55.0f;
     private float horizontalInput;
     private float forwardInput;
     // Update is called once per frame
@@ -45,11 +45,17 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(cameraSwitchKey)) 
         { mainCamera.enabled = !mainCamera.enabled; hoodCamera.enabled = !hoodCamera.enabled; }
 
-        // Invisible boundaries for the X axis (left/right), as well as a safety net
-        var current_pos = transform.position;
-        if (transform.position.x < -8f) {transform.position = new Vector3(-7.9f, current_pos.y, current_pos.z); }
-        else if (transform.position.x > 28f) {transform.position = new Vector3(27.9f, current_pos.y, current_pos.z); }
-        else if (transform.position.y < -40) {transform.position = new Vector3(10f, 5f, 100f); }
+        // Invisible boundaries for the X axis (left/right)
+        // var current_pos = transform.position;
+        // if (transform.position.x < -8f) {transform.position = new Vector3(-7.9f, current_pos.y, current_pos.z); }
+        // else if (transform.position.x > 28f) {transform.position = new Vector3(27.9f, current_pos.y, current_pos.z); }
+        
+        //  A safety net at the bottom in case you fall
+        if (transform.position.y < -40)
+        {
+            transform.position = new Vector3(0f, 0f, 75f);
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
 
         // ReSharper disable once CompareOfFloatsByEqualityOperator
         // Check the car's rotation, if it is upside down (y=-1) then flip the car back up (y=1):

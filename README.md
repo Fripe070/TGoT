@@ -52,13 +52,22 @@ uninstall should take you there as well. Find the game in the list
 of applications, and select it, then press **uninstall**.
 
 #### How to play
-The repository has a [Wikipedia](https://github.com/TechnoShip123/TGoT/Wiki/) where information is listed about the game, how to play it, and more. It will of course get updated as more features arrive to the game.
+The repository has a [Wikipedia](https://github.com/TechnoShip123/TGoT/Wiki/) where information is listed about
+the game, how to play it, and more. It will of course get updated as more features arrive to the game.
 
 ### Contributing
-This project isn't a formal game (yet) but rather a way for me to learn,
-so contributions aren't expected. If you do have some sort of suggestion
-to improve the project then feel free to tell
-me about it.
+When contributing, please have the following in mind:
+- I am not experienced with Unity, in fact this project _for me to learn_ it, so please do not PR with something
+you know is advanced. As annoying as it is, I won't be able to accept PRs until I completely understand what's 
+  going on and how to do it myself.
+- When contributing, please **do not** contribute to the master branch 
+  [*TGoT/master*](https://github.com/TechnoShip123/TGoT/tree/master/), instead create a new
+  branch in your fork, or even commit directly to the development branch 
+  [*TGoT/dev*](https://github.com/TechnoShip123/TGoT/tree/dev/), which is where I do my 
+  development and testing.
+- I may turn down issues/suggestions if they are too advanced, but that _does not mean I am leaving it_.
+- Please do not create issues/comments/etc that you know are not related to the repository.
+- Make sure to read the Wiki before posting an issue, it may be a purposeful feature.
 
 ### Donating
 You don't.
