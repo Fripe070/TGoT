@@ -42,11 +42,14 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
         
         // If the user is pressing the camera switcher key
-        if(Input.GetKeyDown(cameraSwitchKey)) { mainCamera.enabled = !mainCamera.enabled; hoodCamera.enabled = !hoodCamera.enabled; }
+        if(Input.GetKeyDown(cameraSwitchKey)) 
+        { mainCamera.enabled = !mainCamera.enabled; hoodCamera.enabled = !hoodCamera.enabled; }
 
-        // Invisible boundaries for the X axis (left/right)
-        if (transform.position.x < -8f) { transform.position = new Vector3(-7.9f, transform.position.y, transform.position.z); }
-        else if (transform.position.x > 28f) { transform.position = new Vector3(27.9f, transform.position.y, transform.position.z); }
+        // Invisible boundaries for the X axis (left/right), as well as a safety net
+        var current_pos = transform.position;
+        if (transform.position.x < -8f) {transform.position = new Vector3(-7.9f, current_pos.y, current_pos.z); }
+        else if (transform.position.x > 28f) {transform.position = new Vector3(27.9f, current_pos.y, current_pos.z); }
+        else if (transform.position.y < -40) {transform.position = new Vector3(10f, 5f, 100f); }
 
         // ReSharper disable once CompareOfFloatsByEqualityOperator
         // Check the car's rotation, if it is upside down (y=-1) then flip the car back up (y=1):
