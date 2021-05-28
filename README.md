@@ -56,6 +56,12 @@ The repository has a [Wikipedia](https://github.com/TechnoShip123/TGoT/Wiki/) wh
 the game, how to play it, and more. It will of course get updated as more features arrive to the game.
 
 ### Contributing
+#### All contributions are subject to the [Unity Contribution Agreement (UCA)](https://unity3d.com/legal/licenses/Unity_Contribution_Agreement)
+When making a pull request, remember that you are confirming your agreement
+to the terms and conditions of the UCA, including that your Contributions 
+are your original creation and that you have complete right and authority
+to make your Contributions.
+
 When contributing, please have the following in mind:
 - I am not experienced with Unity, in fact this project _for me to learn_ it, so please do not PR with something
 you know is advanced. As annoying as it is, I won't be able to accept PRs until I completely understand what's 
