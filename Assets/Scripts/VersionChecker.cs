@@ -23,10 +23,10 @@ public class VersionChecker : MonoBehaviour, IPointerClickHandler
 
         GetLatestVersion();  // Get the latest game version from the update JSON.
 
-        // TODO: Check if we're on the latest game version, and give a visual indicator if not.
+        // Check if we're on the latest game version, and give a visual indicator if not.
         if (!hasInternetConnection) { gameVersionText.color = Color.yellow; }
         if (!OnLatestVersion())
-        {   // PREPROD: Set application version back to v0.0.8a
+        {
             gameVersionText.color = Color.red; notLatestVersionIcon.SetActive(true);
         }
         else { Debug.Log("User on latest version."); }
@@ -63,13 +63,12 @@ public class VersionChecker : MonoBehaviour, IPointerClickHandler
             dynamic updateJSON = JsonConvert.DeserializeObject(webUpdateJSON);
 
             // Assign the key values to variables:
-            latestGameVersion = updateJSON.readableVersion;
+            latestGameVersion = updateJSON.version;
 
             Debug.Log("[TGoT]: Latest game version pulled: " + latestGameVersion);
         }
 
         // If we don't have an internet connection available.
-        // TODO: Add a visual indicator if we can't check for the latest version.
         else
         {
             hasInternetConnection = false;

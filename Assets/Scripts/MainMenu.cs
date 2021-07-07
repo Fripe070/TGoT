@@ -4,7 +4,6 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
 
-    // TODO: Add application version/onclick to latest release page?
     public void QuitGame() {
         // The Application.Quit(); method closes the Unity Editor, so I have this here for debugging purposes.
         switch (Application.platform)
