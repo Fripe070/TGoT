@@ -1,2 +1,2 @@
 # Ignore Unity files in the linguistics.
-ProjectSettings/* linguist-vendored
+Assets/TextMeshPro/* linguist-vendored
