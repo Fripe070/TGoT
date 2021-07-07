@@ -1,0 +1,2 @@
+# Ignore Unity files in the linguistics.
+Assets/TextMesh Pro/* linguist-vendored=true
