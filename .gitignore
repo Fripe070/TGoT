@@ -2,6 +2,7 @@
 .idea
 .vs
 .vsconfig
+_builds
 
 ### VisualStudio template
 ## Ignore Visual Studio temporary files, build results, and
