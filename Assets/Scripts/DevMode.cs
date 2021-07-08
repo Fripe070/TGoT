@@ -1,5 +1,5 @@
 using UnityEngine;
-using static UnityEngine.Input;
+using UnityEngine.InputSystem;
 
 public class DevMode : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class DevMode : MonoBehaviour
     void Update()
     {
         // We want to use GetKeyDown here, which happens once the combo is hit, rather than GetKey, which continuously triggers while the key combo is held.
-        if (GetKey(KeyCode.LeftControl) && GetKey(KeyCode.LeftAlt) && GetKey(KeyCode.LeftShift) && GetKeyDown(KeyCode.D))
+        if (Keyboard.current.leftCtrlKey.isPressed && Keyboard.current.leftAltKey.isPressed && Keyboard.current.leftShiftKey.isPressed && Keyboard.current.dKey.wasPressedThisFrame)
         {
             // This key combination will act as a toggle, rather than a one-time enable, so we'll use !devModeEnabled.
             devModeEnabled = !devModeEnabled;
@@ -29,6 +29,6 @@ public class DevMode : MonoBehaviour
     
     } 
 
-    public static bool isEnabled() {return devModeEnabled; }
+    public static bool IsEnabled() {return devModeEnabled; }
 
 }
